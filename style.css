@@ -1,16 +1,15 @@
-/* ===== Task 1: mobile-first, own CSS only ===== */
 .features {
   padding: 32px 16px;
-  text-align: center;            /* phone: centered */
+  text-align: center;           
   background: #fff8ec;
 }
 .features__title {
-  font-size: 1.5rem;             /* phone: small heading */
+  font-size: 1.5rem;    
   margin-bottom: 20px;
 }
 .features__list {
   display: grid;
-  grid-template-columns: 1fr;    /* phone: 1 per row */
+  grid-template-columns: 1fr;
   gap: 12px;
   max-width: 1200px;
   margin: 0 auto;
@@ -24,7 +23,6 @@
 .feature h3 { font-size: 1.1rem; margin-bottom: 6px; }
 .feature p  { margin: 0; color: #555; }
 
-/* tablet: 2 per row, bigger heading, more spacing */
 @media (min-width: 768px) {
   .features { padding: 56px 32px; }
   .features__title { font-size: 2rem; }
@@ -34,7 +32,6 @@
   }
 }
 
-/* laptop: 3 per row, left-aligned text, huge heading */
 @media (min-width: 1024px) {
   .features { padding: 72px 48px; text-align: left; }
   .features__title { font-size: 2.5rem; text-align: center; }
@@ -45,5 +42,4 @@
   .feature { padding: 24px; }
 }
 
-/* small Bootstrap override */
 .navbar-brand { font-weight: 700; letter-spacing: .5px; }
